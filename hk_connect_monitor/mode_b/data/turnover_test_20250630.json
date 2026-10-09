@@ -1,0 +1,3962 @@
+{
+  "00031": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 6,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.061%",
+    "min_turnover_pct": "0.020%",
+    "fallback_rescued_months": 0
+  },
+  "00068": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "00052": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.062%",
+    "min_turnover_pct": "0.046%",
+    "fallback_rescued_months": 0
+  },
+  "00062": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.019%",
+    "min_turnover_pct": "0.010%",
+    "fallback_rescued_months": 0
+  },
+  "00038": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.306%",
+    "min_turnover_pct": "0.131%",
+    "fallback_rescued_months": 0
+  },
+  "00117": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.001%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "00069": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.036%",
+    "min_turnover_pct": "0.012%",
+    "fallback_rescued_months": 2
+  },
+  "00107": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.090%",
+    "min_turnover_pct": "0.016%",
+    "fallback_rescued_months": 0
+  },
+  "00128": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.011%",
+    "min_turnover_pct": "0.004%",
+    "fallback_rescued_months": 0
+  },
+  "00147": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.005%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "00182": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.139%",
+    "min_turnover_pct": "0.073%",
+    "fallback_rescued_months": 0
+  },
+  "00085": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.268%",
+    "min_turnover_pct": "0.076%",
+    "fallback_rescued_months": 0
+  },
+  "00133": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 8,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.072%",
+    "min_turnover_pct": "0.023%",
+    "fallback_rescued_months": 0
+  },
+  "00116": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.060%",
+    "min_turnover_pct": "0.029%",
+    "fallback_rescued_months": 0
+  },
+  "00178": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.050%",
+    "min_turnover_pct": "0.034%",
+    "fallback_rescued_months": 0
+  },
+  "00199": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.002%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "00218": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.220%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "00187": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "1.129%",
+    "min_turnover_pct": "0.080%",
+    "fallback_rescued_months": 0
+  },
+  "00302": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.991%",
+    "min_turnover_pct": "0.393%",
+    "fallback_rescued_months": 0
+  },
+  "00232": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.019%",
+    "min_turnover_pct": "0.008%",
+    "fallback_rescued_months": 0
+  },
+  "00301": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.010%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "00321": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 5,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.053%",
+    "min_turnover_pct": "0.010%",
+    "fallback_rescued_months": 0
+  },
+  "00242": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.047%",
+    "min_turnover_pct": "0.021%",
+    "fallback_rescued_months": 0
+  },
+  "00314": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "1.782%",
+    "min_turnover_pct": "0.365%",
+    "fallback_rescued_months": 0
+  },
+  "00264": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.311%",
+    "min_turnover_pct": "0.007%",
+    "fallback_rescued_months": 0
+  },
+  "00315": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 6,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.048%",
+    "min_turnover_pct": "0.014%",
+    "fallback_rescued_months": 0
+  },
+  "00327": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.292%",
+    "min_turnover_pct": "0.062%",
+    "fallback_rescued_months": 0
+  },
+  "00326": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.002%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "00340": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.078%",
+    "min_turnover_pct": "0.004%",
+    "fallback_rescued_months": 0
+  },
+  "00323": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.132%",
+    "min_turnover_pct": "0.022%",
+    "fallback_rescued_months": 0
+  },
+  "00357": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.620%",
+    "min_turnover_pct": "0.223%",
+    "fallback_rescued_months": 0
+  },
+  "00331": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.026%",
+    "min_turnover_pct": "0.014%",
+    "fallback_rescued_months": 0
+  },
+  "00341": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.215%",
+    "min_turnover_pct": "0.087%",
+    "fallback_rescued_months": 0
+  },
+  "00347": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.111%",
+    "min_turnover_pct": "0.045%",
+    "fallback_rescued_months": 1
+  },
+  "00338": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.112%",
+    "min_turnover_pct": "0.054%",
+    "fallback_rescued_months": 0
+  },
+  "00376": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.035%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "00470": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "00501": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "00370": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.258%",
+    "min_turnover_pct": "0.044%",
+    "fallback_rescued_months": 0
+  },
+  "00412": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "1.312%",
+    "min_turnover_pct": "0.607%",
+    "fallback_rescued_months": 0
+  },
+  "00434": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "1.614%",
+    "min_turnover_pct": "0.159%",
+    "fallback_rescued_months": 0
+  },
+  "00408": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.019%",
+    "min_turnover_pct": "0.008%",
+    "fallback_rescued_months": 0
+  },
+  "00400": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.015%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "00537": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "00527": {
+    "passed": false,
+    "total_months": 11,
+    "passed_months": 6,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.106%",
+    "min_turnover_pct": "0.023%",
+    "fallback_rescued_months": 0
+  },
+  "00433": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.017%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "00517": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.057%",
+    "min_turnover_pct": "0.031%",
+    "fallback_rescued_months": 1
+  },
+  "00451": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.117%",
+    "min_turnover_pct": "0.059%",
+    "fallback_rescued_months": 0
+  },
+  "00511": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.172%",
+    "min_turnover_pct": "0.114%",
+    "fallback_rescued_months": 0
+  },
+  "00558": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.759%",
+    "min_turnover_pct": "0.319%",
+    "fallback_rescued_months": 0
+  },
+  "00525": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.088%",
+    "min_turnover_pct": "0.040%",
+    "fallback_rescued_months": 2
+  },
+  "00565": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.060%",
+    "min_turnover_pct": "0.014%",
+    "fallback_rescued_months": 1
+  },
+  "00564": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.098%",
+    "min_turnover_pct": "0.045%",
+    "fallback_rescued_months": 3
+  },
+  "00553": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.627%",
+    "min_turnover_pct": "0.075%",
+    "fallback_rescued_months": 0
+  },
+  "00536": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.044%",
+    "min_turnover_pct": "0.020%",
+    "fallback_rescued_months": 0
+  },
+  "00563": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.033%",
+    "min_turnover_pct": "0.008%",
+    "fallback_rescued_months": 0
+  },
+  "00600": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "00580": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.085%",
+    "min_turnover_pct": "0.045%",
+    "fallback_rescued_months": 0
+  },
+  "00579": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.086%",
+    "min_turnover_pct": "0.041%",
+    "fallback_rescued_months": 0
+  },
+  "00568": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.897%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "00638": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "00588": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 8,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.105%",
+    "min_turnover_pct": "0.027%",
+    "fallback_rescued_months": 0
+  },
+  "00622": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.001%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "00596": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.761%",
+    "min_turnover_pct": "0.255%",
+    "fallback_rescued_months": 0
+  },
+  "00664": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "00668": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "00628": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.008%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "00595": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.016%",
+    "min_turnover_pct": "0.004%",
+    "fallback_rescued_months": 0
+  },
+  "00613": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.001%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "00699": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "00581": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.111%",
+    "min_turnover_pct": "0.016%",
+    "fallback_rescued_months": 0
+  },
+  "00679": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.007%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "00655": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.012%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "00650": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.088%",
+    "min_turnover_pct": "0.007%",
+    "fallback_rescued_months": 0
+  },
+  "00694": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.289%",
+    "min_turnover_pct": "0.205%",
+    "fallback_rescued_months": 0
+  },
+  "00710": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.493%",
+    "min_turnover_pct": "0.161%",
+    "fallback_rescued_months": 0
+  },
+  "00695": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.010%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "00661": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.018%",
+    "min_turnover_pct": "0.005%",
+    "fallback_rescued_months": 0
+  },
+  "00709": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.106%",
+    "min_turnover_pct": "0.062%",
+    "fallback_rescued_months": 0
+  },
+  "00799": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.280%",
+    "min_turnover_pct": "0.126%",
+    "fallback_rescued_months": 0
+  },
+  "00743": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.116%",
+    "min_turnover_pct": "0.048%",
+    "fallback_rescued_months": 0
+  },
+  "00777": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.426%",
+    "min_turnover_pct": "0.094%",
+    "fallback_rescued_months": 0
+  },
+  "00805": {
+    "passed": false,
+    "total_months": 6,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.024%",
+    "min_turnover_pct": "0.007%",
+    "fallback_rescued_months": 0
+  },
+  "00746": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.014%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "00806": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.115%",
+    "min_turnover_pct": "0.039%",
+    "fallback_rescued_months": 0
+  },
+  "00874": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.092%",
+    "min_turnover_pct": "0.032%",
+    "fallback_rescued_months": 2
+  },
+  "00804": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.015%",
+    "min_turnover_pct": "0.005%",
+    "fallback_rescued_months": 0
+  },
+  "00815": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.597%",
+    "min_turnover_pct": "0.039%",
+    "fallback_rescued_months": 0
+  },
+  "00861": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.497%",
+    "min_turnover_pct": "0.219%",
+    "fallback_rescued_months": 0
+  },
+  "00901": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "00818": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 3,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.056%",
+    "min_turnover_pct": "0.014%",
+    "fallback_rescued_months": 0
+  },
+  "00813": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "4.021%",
+    "min_turnover_pct": "0.750%",
+    "fallback_rescued_months": 0
+  },
+  "00866": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.115%",
+    "min_turnover_pct": "0.039%",
+    "fallback_rescued_months": 0
+  },
+  "00884": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "2.453%",
+    "min_turnover_pct": "0.847%",
+    "fallback_rescued_months": 0
+  },
+  "01021": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "00900": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.015%",
+    "min_turnover_pct": "0.006%",
+    "fallback_rescued_months": 0
+  },
+  "00894": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.012%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "00918": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.004%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "00895": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.275%",
+    "min_turnover_pct": "0.020%",
+    "fallback_rescued_months": 1
+  },
+  "01033": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.097%",
+    "min_turnover_pct": "0.009%",
+    "fallback_rescued_months": 0
+  },
+  "00950": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.027%",
+    "min_turnover_pct": "0.008%",
+    "fallback_rescued_months": 0
+  },
+  "00933": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.043%",
+    "min_turnover_pct": "0.017%",
+    "fallback_rescued_months": 0
+  },
+  "01081": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01045": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 3,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.044%",
+    "min_turnover_pct": "0.019%",
+    "fallback_rescued_months": 0
+  },
+  "01020": {
+    "passed": false,
+    "total_months": 10,
+    "passed_months": 3,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.037%",
+    "min_turnover_pct": "0.012%",
+    "fallback_rescued_months": 0
+  },
+  "01050": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.028%",
+    "min_turnover_pct": "0.017%",
+    "fallback_rescued_months": 0
+  },
+  "01072": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.033%",
+    "min_turnover_pct": "0.015%",
+    "fallback_rescued_months": 11
+  },
+  "01057": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.996%",
+    "min_turnover_pct": "0.160%",
+    "fallback_rescued_months": 0
+  },
+  "01086": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.520%",
+    "min_turnover_pct": "0.007%",
+    "fallback_rescued_months": 0
+  },
+  "01053": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 6,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.069%",
+    "min_turnover_pct": "0.008%",
+    "fallback_rescued_months": 2
+  },
+  "01115": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.017%",
+    "min_turnover_pct": "0.005%",
+    "fallback_rescued_months": 1
+  },
+  "01104": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.012%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "01051": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 3,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.037%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "01127": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.017%",
+    "min_turnover_pct": "0.008%",
+    "fallback_rescued_months": 0
+  },
+  "01126": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 6,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.106%",
+    "min_turnover_pct": "0.023%",
+    "fallback_rescued_months": 0
+  },
+  "01122": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.031%",
+    "min_turnover_pct": "0.011%",
+    "fallback_rescued_months": 0
+  },
+  "01108": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.285%",
+    "min_turnover_pct": "0.048%",
+    "fallback_rescued_months": 0
+  },
+  "01187": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01191": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01142": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.055%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "01167": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.236%",
+    "min_turnover_pct": "0.012%",
+    "fallback_rescued_months": 0
+  },
+  "01161": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.018%",
+    "min_turnover_pct": "0.009%",
+    "fallback_rescued_months": 0
+  },
+  "01141": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.020%",
+    "min_turnover_pct": "0.005%",
+    "fallback_rescued_months": 0
+  },
+  "01236": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01133": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.032%",
+    "min_turnover_pct": "0.006%",
+    "fallback_rescued_months": 4
+  },
+  "01152": {
+    "passed": false,
+    "total_months": 7,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.015%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "01202": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.012%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "01228": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.018%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "01234": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.079%",
+    "min_turnover_pct": "0.057%",
+    "fallback_rescued_months": 0
+  },
+  "01304": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01274": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "9.359%",
+    "min_turnover_pct": "0.640%",
+    "fallback_rescued_months": 0
+  },
+  "01223": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.008%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "01270": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.012%",
+    "min_turnover_pct": "0.004%",
+    "fallback_rescued_months": 0
+  },
+  "01180": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 5,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.097%",
+    "min_turnover_pct": "0.005%",
+    "fallback_rescued_months": 0
+  },
+  "01286": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.011%",
+    "min_turnover_pct": "0.004%",
+    "fallback_rescued_months": 1
+  },
+  "01321": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.004%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "01377": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01280": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.133%",
+    "min_turnover_pct": "0.035%",
+    "fallback_rescued_months": 0
+  },
+  "01334": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.080%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "01392": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01349": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.333%",
+    "min_turnover_pct": "0.065%",
+    "fallback_rescued_months": 0
+  },
+  "01385": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.656%",
+    "min_turnover_pct": "0.174%",
+    "fallback_rescued_months": 0
+  },
+  "01372": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.272%",
+    "min_turnover_pct": "0.008%",
+    "fallback_rescued_months": 0
+  },
+  "01300": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.007%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "01382": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.183%",
+    "min_turnover_pct": "0.070%",
+    "fallback_rescued_months": 0
+  },
+  "01396": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.006%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "01330": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.071%",
+    "min_turnover_pct": "0.014%",
+    "fallback_rescued_months": 0
+  },
+  "01410": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.006%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "01375": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.236%",
+    "min_turnover_pct": "0.021%",
+    "fallback_rescued_months": 1
+  },
+  "01417": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.001%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "01440": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.024%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 1
+  },
+  "01450": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.073%",
+    "min_turnover_pct": "0.029%",
+    "fallback_rescued_months": 0
+  },
+  "01432": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.009%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "01511": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01477": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.374%",
+    "min_turnover_pct": "0.164%",
+    "fallback_rescued_months": 0
+  },
+  "01473": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.006%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "01508": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.035%",
+    "min_turnover_pct": "0.010%",
+    "fallback_rescued_months": 8
+  },
+  "01483": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.069%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "01466": {
+    "passed": false,
+    "total_months": 11,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.013%",
+    "min_turnover_pct": "0.005%",
+    "fallback_rescued_months": 0
+  },
+  "01456": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.124%",
+    "min_turnover_pct": "0.030%",
+    "fallback_rescued_months": 4
+  },
+  "01516": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.892%",
+    "min_turnover_pct": "0.414%",
+    "fallback_rescued_months": 0
+  },
+  "01501": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.012%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "01609": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01528": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.209%",
+    "min_turnover_pct": "0.014%",
+    "fallback_rescued_months": 1
+  },
+  "01571": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.056%",
+    "min_turnover_pct": "0.022%",
+    "fallback_rescued_months": 0
+  },
+  "01526": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.004%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "01541": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "3.860%",
+    "min_turnover_pct": "0.077%",
+    "fallback_rescued_months": 0
+  },
+  "01523": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 5,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.048%",
+    "min_turnover_pct": "0.022%",
+    "fallback_rescued_months": 0
+  },
+  "01521": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 6,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.159%",
+    "min_turnover_pct": "0.005%",
+    "fallback_rescued_months": 0
+  },
+  "01601": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.012%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "01611": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.227%",
+    "min_turnover_pct": "0.032%",
+    "fallback_rescued_months": 0
+  },
+  "01627": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.009%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "01613": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.004%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "01635": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.337%",
+    "min_turnover_pct": "0.011%",
+    "fallback_rescued_months": 1
+  },
+  "01688": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01626": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.020%",
+    "min_turnover_pct": "0.014%",
+    "fallback_rescued_months": 0
+  },
+  "01645": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.154%",
+    "min_turnover_pct": "0.023%",
+    "fallback_rescued_months": 0
+  },
+  "01660": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.075%",
+    "min_turnover_pct": "0.006%",
+    "fallback_rescued_months": 0
+  },
+  "01651": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 6,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.078%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 2
+  },
+  "01657": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.003%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "01697": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.005%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "01672": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.150%",
+    "min_turnover_pct": "0.043%",
+    "fallback_rescued_months": 0
+  },
+  "01618": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.056%",
+    "min_turnover_pct": "0.024%",
+    "fallback_rescued_months": 5
+  },
+  "01765": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.201%",
+    "min_turnover_pct": "0.080%",
+    "fallback_rescued_months": 0
+  },
+  "01779": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01696": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.232%",
+    "min_turnover_pct": "0.094%",
+    "fallback_rescued_months": 0
+  },
+  "01760": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 6,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.082%",
+    "min_turnover_pct": "0.012%",
+    "fallback_rescued_months": 0
+  },
+  "01710": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.008%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "01712": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 5,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.157%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "01780": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.002%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "01716": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.002%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "01809": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.015%",
+    "min_turnover_pct": "0.006%",
+    "fallback_rescued_months": 0
+  },
+  "01762": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 5,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.054%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "01763": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 5,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.048%",
+    "min_turnover_pct": "0.010%",
+    "fallback_rescued_months": 0
+  },
+  "01799": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.251%",
+    "min_turnover_pct": "0.075%",
+    "fallback_rescued_months": 0
+  },
+  "01854": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.080%",
+    "min_turnover_pct": "0.014%",
+    "fallback_rescued_months": 0
+  },
+  "01866": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 8,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.059%",
+    "min_turnover_pct": "0.018%",
+    "fallback_rescued_months": 2
+  },
+  "01865": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.127%",
+    "min_turnover_pct": "0.039%",
+    "fallback_rescued_months": 0
+  },
+  "01815": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.179%",
+    "min_turnover_pct": "0.013%",
+    "fallback_rescued_months": 0
+  },
+  "01879": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01812": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.126%",
+    "min_turnover_pct": "0.033%",
+    "fallback_rescued_months": 0
+  },
+  "01858": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.175%",
+    "min_turnover_pct": "0.061%",
+    "fallback_rescued_months": 0
+  },
+  "01831": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.003%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "01873": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.147%",
+    "min_turnover_pct": "0.021%",
+    "fallback_rescued_months": 0
+  },
+  "01956": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01906": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.349%",
+    "min_turnover_pct": "0.188%",
+    "fallback_rescued_months": 0
+  },
+  "01875": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.004%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "01989": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "01953": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.001%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "01851": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.002%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "01911": {
+    "passed": true,
+    "total_months": 10,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.305%",
+    "min_turnover_pct": "0.073%",
+    "fallback_rescued_months": 0
+  },
+  "01979": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.035%",
+    "min_turnover_pct": "0.016%",
+    "fallback_rescued_months": 0
+  },
+  "01877": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.206%",
+    "min_turnover_pct": "0.037%",
+    "fallback_rescued_months": 2
+  },
+  "01969": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.198%",
+    "min_turnover_pct": "0.185%",
+    "fallback_rescued_months": 0
+  },
+  "02028": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.001%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "01943": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 3,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.071%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "02009": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.118%",
+    "min_turnover_pct": "0.034%",
+    "fallback_rescued_months": 1
+  },
+  "02025": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.005%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "02068": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.110%",
+    "min_turnover_pct": "0.025%",
+    "fallback_rescued_months": 0
+  },
+  "02105": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "1.935%",
+    "min_turnover_pct": "0.458%",
+    "fallback_rescued_months": 0
+  },
+  "02030": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.020%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "02142": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.211%",
+    "min_turnover_pct": "0.022%",
+    "fallback_rescued_months": 0
+  },
+  "02160": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.192%",
+    "min_turnover_pct": "0.031%",
+    "fallback_rescued_months": 0
+  },
+  "02137": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.562%",
+    "min_turnover_pct": "0.135%",
+    "fallback_rescued_months": 0
+  },
+  "02199": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.003%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "02149": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 6,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.138%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "02197": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.010%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "02166": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.016%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "02126": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.267%",
+    "min_turnover_pct": "0.042%",
+    "fallback_rescued_months": 0
+  },
+  "02249": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02209": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.346%",
+    "min_turnover_pct": "0.145%",
+    "fallback_rescued_months": 0
+  },
+  "02198": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.017%",
+    "min_turnover_pct": "0.006%",
+    "fallback_rescued_months": 0
+  },
+  "02272": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02225": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 8,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.041%",
+    "min_turnover_pct": "0.014%",
+    "fallback_rescued_months": 2
+  },
+  "02290": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02283": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 8,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.098%",
+    "min_turnover_pct": "0.026%",
+    "fallback_rescued_months": 0
+  },
+  "02271": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.097%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "02180": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.012%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "02218": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.172%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "02335": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02208": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.128%",
+    "min_turnover_pct": "0.057%",
+    "fallback_rescued_months": 0
+  },
+  "02245": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.005%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "02265": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.022%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "02339": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.001%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "02360": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 3,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.042%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "02315": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.008%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "02306": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.093%",
+    "min_turnover_pct": "0.005%",
+    "fallback_rescued_months": 0
+  },
+  "02302": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.016%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "02372": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.004%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "02309": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.427%",
+    "min_turnover_pct": "0.214%",
+    "fallback_rescued_months": 0
+  },
+  "02373": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.078%",
+    "min_turnover_pct": "0.011%",
+    "fallback_rescued_months": 3
+  },
+  "02436": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.000%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "02381": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.005%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "02342": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.431%",
+    "min_turnover_pct": "0.085%",
+    "fallback_rescued_months": 0
+  },
+  "02422": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.016%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "02450": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.027%",
+    "min_turnover_pct": "0.007%",
+    "fallback_rescued_months": 0
+  },
+  "02475": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02476": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02442": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.000%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "02402": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.228%",
+    "min_turnover_pct": "0.010%",
+    "fallback_rescued_months": 0
+  },
+  "02399": {
+    "passed": false,
+    "total_months": 11,
+    "passed_months": 5,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.048%",
+    "min_turnover_pct": "0.016%",
+    "fallback_rescued_months": 0
+  },
+  "02493": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02465": {
+    "passed": true,
+    "total_months": 9,
+    "passed_months": 9,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.745%",
+    "min_turnover_pct": "0.070%",
+    "fallback_rescued_months": 0
+  },
+  "02451": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.008%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 1
+  },
+  "02411": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.387%",
+    "min_turnover_pct": "0.050%",
+    "fallback_rescued_months": 0
+  },
+  "02488": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.284%",
+    "min_turnover_pct": "0.152%",
+    "fallback_rescued_months": 0
+  },
+  "02489": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 3,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.060%",
+    "min_turnover_pct": "0.013%",
+    "fallback_rescued_months": 0
+  },
+  "02469": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "5.852%",
+    "min_turnover_pct": "1.312%",
+    "fallback_rescued_months": 0
+  },
+  "02490": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.122%",
+    "min_turnover_pct": "0.114%",
+    "fallback_rescued_months": 0
+  },
+  "02495": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.347%",
+    "min_turnover_pct": "0.252%",
+    "fallback_rescued_months": 0
+  },
+  "02526": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02530": {
+    "passed": false,
+    "total_months": 6,
+    "passed_months": 3,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.179%",
+    "min_turnover_pct": "0.011%",
+    "fallback_rescued_months": 0
+  },
+  "02539": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02546": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02520": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.001%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 1
+  },
+  "02503": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 8,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.073%",
+    "min_turnover_pct": "0.006%",
+    "fallback_rescued_months": 0
+  },
+  "02549": {
+    "passed": true,
+    "total_months": 9,
+    "passed_months": 9,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.393%",
+    "min_turnover_pct": "0.155%",
+    "fallback_rescued_months": 0
+  },
+  "02553": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02511": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.259%",
+    "min_turnover_pct": "0.024%",
+    "fallback_rescued_months": 0
+  },
+  "02521": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.016%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "02516": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.324%",
+    "min_turnover_pct": "0.035%",
+    "fallback_rescued_months": 0
+  },
+  "02579": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02501": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.015%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "02522": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "3.638%",
+    "min_turnover_pct": "0.059%",
+    "fallback_rescued_months": 0
+  },
+  "02603": {
+    "passed": true,
+    "total_months": 2,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.989%",
+    "min_turnover_pct": "0.299%",
+    "fallback_rescued_months": 0
+  },
+  "02576": {
+    "passed": false,
+    "total_months": 9,
+    "passed_months": 1,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.016%",
+    "min_turnover_pct": "0.003%",
+    "fallback_rescued_months": 0
+  },
+  "02552": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.196%",
+    "min_turnover_pct": "0.044%",
+    "fallback_rescued_months": 0
+  },
+  "02630": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02631": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02632": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02648": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02657": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02658": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02667": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02585": {
+    "passed": false,
+    "total_months": 8,
+    "passed_months": 5,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.449%",
+    "min_turnover_pct": "0.019%",
+    "fallback_rescued_months": 0
+  },
+  "02672": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02676": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02691": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02692": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02567": {
+    "passed": true,
+    "total_months": 9,
+    "passed_months": 8,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.227%",
+    "min_turnover_pct": "0.036%",
+    "fallback_rescued_months": 0
+  },
+  "02697": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02701": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02714": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02715": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02720": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02559": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.078%",
+    "min_turnover_pct": "0.013%",
+    "fallback_rescued_months": 0
+  },
+  "02723": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02726": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02768": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02696": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.067%",
+    "min_turnover_pct": "0.013%",
+    "fallback_rescued_months": 4
+  },
+  "02797": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02550": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "17.883%",
+    "min_turnover_pct": "0.364%",
+    "fallback_rescued_months": 0
+  },
+  "02865": {
+    "passed": true,
+    "total_months": 2,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.623%",
+    "min_turnover_pct": "0.337%",
+    "fallback_rescued_months": 0
+  },
+  "02598": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.474%",
+    "min_turnover_pct": "0.048%",
+    "fallback_rescued_months": 1
+  },
+  "03200": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03268": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03277": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03296": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03308": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03310": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02777": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "3.303%",
+    "min_turnover_pct": "0.418%",
+    "fallback_rescued_months": 0
+  },
+  "02866": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.115%",
+    "min_turnover_pct": "0.035%",
+    "fallback_rescued_months": 1
+  },
+  "02878": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.401%",
+    "min_turnover_pct": "0.076%",
+    "fallback_rescued_months": 0
+  },
+  "02616": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.160%",
+    "min_turnover_pct": "0.026%",
+    "fallback_rescued_months": 0
+  },
+  "03355": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "02623": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.001%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "03378": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03337": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.177%",
+    "min_turnover_pct": "0.038%",
+    "fallback_rescued_months": 0
+  },
+  "03388": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03319": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.673%",
+    "min_turnover_pct": "0.303%",
+    "fallback_rescued_months": 0
+  },
+  "03636": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03329": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.013%",
+    "min_turnover_pct": "0.007%",
+    "fallback_rescued_months": 0
+  },
+  "03661": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03600": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 3,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.040%",
+    "min_turnover_pct": "0.016%",
+    "fallback_rescued_months": 0
+  },
+  "02668": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.116%",
+    "min_turnover_pct": "0.036%",
+    "fallback_rescued_months": 0
+  },
+  "03377": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "1.107%",
+    "min_turnover_pct": "0.247%",
+    "fallback_rescued_months": 0
+  },
+  "03347": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.303%",
+    "min_turnover_pct": "0.116%",
+    "fallback_rescued_months": 0
+  },
+  "03638": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.244%",
+    "min_turnover_pct": "0.065%",
+    "fallback_rescued_months": 0
+  },
+  "02722": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 5,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.082%",
+    "min_turnover_pct": "0.006%",
+    "fallback_rescued_months": 1
+  },
+  "03752": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03382": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.036%",
+    "min_turnover_pct": "0.023%",
+    "fallback_rescued_months": 0
+  },
+  "03709": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.302%",
+    "min_turnover_pct": "0.205%",
+    "fallback_rescued_months": 0
+  },
+  "03774": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03718": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.006%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "03680": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 5,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.060%",
+    "min_turnover_pct": "0.006%",
+    "fallback_rescued_months": 0
+  },
+  "03678": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "3.164%",
+    "min_turnover_pct": "0.080%",
+    "fallback_rescued_months": 0
+  },
+  "03737": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 8,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.057%",
+    "min_turnover_pct": "0.020%",
+    "fallback_rescued_months": 0
+  },
+  "03759": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.253%",
+    "min_turnover_pct": "0.105%",
+    "fallback_rescued_months": 0
+  },
+  "03833": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.021%",
+    "min_turnover_pct": "0.009%",
+    "fallback_rescued_months": 0
+  },
+  "03880": {
+    "passed": true,
+    "total_months": 1,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "9.545%",
+    "min_turnover_pct": "9.545%",
+    "fallback_rescued_months": 0
+  },
+  "03669": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "1.236%",
+    "min_turnover_pct": "0.370%",
+    "fallback_rescued_months": 0
+  },
+  "03773": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 4,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.041%",
+    "min_turnover_pct": "0.008%",
+    "fallback_rescued_months": 0
+  },
+  "03952": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03838": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.119%",
+    "min_turnover_pct": "0.055%",
+    "fallback_rescued_months": 0
+  },
+  "03813": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 3,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.041%",
+    "min_turnover_pct": "0.013%",
+    "fallback_rescued_months": 0
+  },
+  "03986": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03866": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 1,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.022%",
+    "min_turnover_pct": "0.007%",
+    "fallback_rescued_months": 1
+  },
+  "03928": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.001%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "06051": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03848": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 8,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.068%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "06067": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03938": {
+    "passed": false,
+    "total_months": 11,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.002%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "06106": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03983": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.088%",
+    "min_turnover_pct": "0.051%",
+    "fallback_rescued_months": 0
+  },
+  "06132": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03958": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.082%",
+    "min_turnover_pct": "0.020%",
+    "fallback_rescued_months": 5
+  },
+  "06166": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06162": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.006%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "03836": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.013%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "06063": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.002%",
+    "min_turnover_pct": "0.000%",
+    "fallback_rescued_months": 0
+  },
+  "06100": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.993%",
+    "min_turnover_pct": "0.446%",
+    "fallback_rescued_months": 0
+  },
+  "06178": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.111%",
+    "min_turnover_pct": "0.016%",
+    "fallback_rescued_months": 5
+  },
+  "06036": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.031%",
+    "min_turnover_pct": "0.014%",
+    "fallback_rescued_months": 0
+  },
+  "06127": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.177%",
+    "min_turnover_pct": "0.026%",
+    "fallback_rescued_months": 2
+  },
+  "06613": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "03990": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.272%",
+    "min_turnover_pct": "0.082%",
+    "fallback_rescued_months": 0
+  },
+  "06616": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.129%",
+    "min_turnover_pct": "0.059%",
+    "fallback_rescued_months": 0
+  },
+  "06636": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06656": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06658": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06608": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.550%",
+    "min_turnover_pct": "0.158%",
+    "fallback_rescued_months": 0
+  },
+  "06675": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06601": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 8,
+    "passed_6m": 5,
+    "avg_turnover_pct": "0.105%",
+    "min_turnover_pct": "0.043%",
+    "fallback_rescued_months": 0
+  },
+  "06185": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.580%",
+    "min_turnover_pct": "0.243%",
+    "fallback_rescued_months": 0
+  },
+  "06676": {
+    "passed": true,
+    "total_months": 4,
+    "passed_months": 4,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.430%",
+    "min_turnover_pct": "0.328%",
+    "fallback_rescued_months": 0
+  },
+  "06715": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06745": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06669": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.097%",
+    "min_turnover_pct": "0.083%",
+    "fallback_rescued_months": 0
+  },
+  "06809": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06810": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06198": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.055%",
+    "min_turnover_pct": "0.027%",
+    "fallback_rescued_months": 3
+  },
+  "06693": {
+    "passed": true,
+    "total_months": 4,
+    "passed_months": 4,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.830%",
+    "min_turnover_pct": "0.276%",
+    "fallback_rescued_months": 0
+  },
+  "06622": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.152%",
+    "min_turnover_pct": "0.017%",
+    "fallback_rescued_months": 0
+  },
+  "06831": {
+    "passed": true,
+    "total_months": 2,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.623%",
+    "min_turnover_pct": "0.404%",
+    "fallback_rescued_months": 0
+  },
+  "06871": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06872": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06887": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06915": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06821": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.060%",
+    "min_turnover_pct": "0.022%",
+    "fallback_rescued_months": 6
+  },
+  "06680": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.303%",
+    "min_turnover_pct": "0.008%",
+    "fallback_rescued_months": 1
+  },
+  "06196": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 10,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.108%",
+    "min_turnover_pct": "0.039%",
+    "fallback_rescued_months": 1
+  },
+  "06938": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06609": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 1,
+    "avg_turnover_pct": "0.028%",
+    "min_turnover_pct": "0.001%",
+    "fallback_rescued_months": 0
+  },
+  "06951": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06980": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06806": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.082%",
+    "min_turnover_pct": "0.007%",
+    "fallback_rescued_months": 5
+  },
+  "06936": {
+    "passed": true,
+    "total_months": 8,
+    "passed_months": 8,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.103%",
+    "min_turnover_pct": "0.030%",
+    "fallback_rescued_months": 5
+  },
+  "07489": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "07630": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "07656": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "07666": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "07687": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "07688": {
+    "passed": false,
+    "total_months": 0,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": null,
+    "min_turnover_pct": null,
+    "fallback_rescued_months": 0
+  },
+  "06811": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 3,
+    "passed_6m": 3,
+    "avg_turnover_pct": "0.054%",
+    "min_turnover_pct": "0.018%",
+    "fallback_rescued_months": 0
+  },
+  "06922": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.019%",
+    "min_turnover_pct": "0.008%",
+    "fallback_rescued_months": 0
+  },
+  "06929": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.013%",
+    "min_turnover_pct": "0.007%",
+    "fallback_rescued_months": 0
+  },
+  "06996": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 6,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.173%",
+    "min_turnover_pct": "0.020%",
+    "fallback_rescued_months": 0
+  },
+  "06865": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.503%",
+    "min_turnover_pct": "0.268%",
+    "fallback_rescued_months": 0
+  },
+  "00754": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 7,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.067%",
+    "min_turnover_pct": "0.020%",
+    "fallback_rescued_months": 2
+  },
+  "06939": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 0,
+    "passed_6m": 0,
+    "avg_turnover_pct": "0.005%",
+    "min_turnover_pct": "0.002%",
+    "fallback_rescued_months": 0
+  },
+  "00011": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.087%",
+    "min_turnover_pct": "0.054%",
+    "fallback_rescued_months": 0
+  },
+  "06998": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.022%",
+    "min_turnover_pct": "0.005%",
+    "fallback_rescued_months": 0
+  },
+  "01448": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.286%",
+    "min_turnover_pct": "0.117%",
+    "fallback_rescued_months": 0
+  },
+  "00489": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.311%",
+    "min_turnover_pct": "0.114%",
+    "fallback_rescued_months": 0
+  },
+  "01958": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.152%",
+    "min_turnover_pct": "0.077%",
+    "fallback_rescued_months": 0
+  },
+  "01341": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.819%",
+    "min_turnover_pct": "0.174%",
+    "fallback_rescued_months": 0
+  },
+  "01515": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.369%",
+    "min_turnover_pct": "0.150%",
+    "fallback_rescued_months": 0
+  },
+  "02629": {
+    "passed": true,
+    "total_months": 2,
+    "passed_months": 2,
+    "passed_6m": 2,
+    "avg_turnover_pct": "0.481%",
+    "min_turnover_pct": "0.328%",
+    "fallback_rescued_months": 0
+  },
+  "01855": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.149%",
+    "min_turnover_pct": "0.034%",
+    "fallback_rescued_months": 1
+  },
+  "01798": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.147%",
+    "min_turnover_pct": "0.073%",
+    "fallback_rescued_months": 0
+  },
+  "01709": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.153%",
+    "min_turnover_pct": "0.074%",
+    "fallback_rescued_months": 0
+  },
+  "02429": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "1.626%",
+    "min_turnover_pct": "0.098%",
+    "fallback_rescued_months": 0
+  },
+  "00272": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 4,
+    "avg_turnover_pct": "0.081%",
+    "min_turnover_pct": "0.036%",
+    "fallback_rescued_months": 2
+  },
+  "02443": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 6,
+    "avg_turnover_pct": "1.885%",
+    "min_turnover_pct": "0.020%",
+    "fallback_rescued_months": 0
+  },
+  "06086": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.250%",
+    "min_turnover_pct": "0.068%",
+    "fallback_rescued_months": 0
+  },
+  "02169": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.160%",
+    "min_turnover_pct": "0.053%",
+    "fallback_rescued_months": 0
+  },
+  "09956": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 11,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.115%",
+    "min_turnover_pct": "0.044%",
+    "fallback_rescued_months": 0
+  },
+  "09979": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.350%",
+    "min_turnover_pct": "0.204%",
+    "fallback_rescued_months": 0
+  },
+  "09860": {
+    "passed": false,
+    "total_months": 12,
+    "passed_months": 9,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.090%",
+    "min_turnover_pct": "0.008%",
+    "fallback_rescued_months": 0
+  },
+  "09885": {
+    "passed": true,
+    "total_months": 12,
+    "passed_months": 12,
+    "passed_6m": 6,
+    "avg_turnover_pct": "0.414%",
+    "min_turnover_pct": "0.043%",
+    "fallback_rescued_months": 1
+  }
+}

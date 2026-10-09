@@ -1,0 +1,37 @@
+# 数据源配置
+
+data_source:
+  # 主数据源 (切换到Tushare，支持历史成分股快照)
+  provider: "tushare"
+
+  # AKShare配置 (备用，免费)
+  akshare:
+    rate_limit: 0.05  # 每次请求间隔秒数 (避免被封)
+    cache_dir: "data/storage/cache"
+
+  # Tushare配置 (当前使用)
+  tushare:
+    enabled: true
+    api_key: "${TUSHARE_API_TOKEN}"  # 从.env读取
+    rate_limit: 200  # 每分钟请求限制 (2000积分权限)
+    max_workers: 8  # 数据采集并发线程数 (逐交易日/逐股票循环的线程池大小)
+    cache_dir: "data/storage/cache"
+
+# 数据缓存 (SQLite持久化缓存)
+cache:
+  enabled: true
+  db_path: "data/storage/database/cache.db"
+  expiry_hours: 24  # 实时数据缓存过期，历史数据永久有效
+
+# 数据库
+database:
+  type: "sqlite"  # sqlite / postgresql
+  path: "data/storage/database/index_data.db"
+
+  # PostgreSQL配置 (如使用)
+  postgresql:
+    host: "localhost"
+    port: 5432
+    dbname: "index_predictor"
+    user: "${DB_USER}"
+    password: "${DB_PASSWORD}"

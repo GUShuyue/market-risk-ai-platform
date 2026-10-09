@@ -1,0 +1,24 @@
+# 港股通监控系统依赖
+# Python >= 3.12
+
+# Web 框架
+fastapi>=0.141.1
+uvicorn>=0.52.1
+pydantic>=2.13.4
+
+# 数据采集与处理
+akshare>=1.18.64
+pandas>=2.3.3
+
+# LLM / HTTP
+requests>=2.33.1
+python-dotenv>=1.2.2
+
+# 工具库
+tqdm>=4.67.3
+pyyaml>=6.0.3
+markdown>=3.3.6
+
+# 文件解析
+pdfplumber>=0.11.9
+xlrd>=2.0.2

@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# 虚拟环境
+venv/
+.venv/
+env/
+*.env
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 数据文件
+data/*.db
+data/*.sqlite3
+data/chroma_db/
+
+# 日志
+*.log
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 模型文件（仅根目录）
+/models/
+*.pt
+*.bin
+*.safetensors
+
+# OS
+.DS_Store
+Thumbs.db

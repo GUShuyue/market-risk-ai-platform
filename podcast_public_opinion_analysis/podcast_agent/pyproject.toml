@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "podcast-agent"
+version = "0.1.0"
+description = "Multi-Agent Podcast Public Opinion Analysis System for A-Share Market"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "AI Market Risk Management Intern"}
+]
+
+dependencies = [
+    "langgraph>=0.2.0",
+    "langchain>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "pydantic>=2.0.0",
+    "openai>=1.0.0",
+    "httpx>=0.27.0",
+    "tiktoken>=0.7.0",
+    "python-dotenv>=1.0.0",
+    "sqlalchemy>=2.0.0",
+    "aiohttp>=3.9.0",
+    "tenacity>=8.0.0",
+    "rich>=13.0.0",
+    "typer>=0.12.0",
+    "streamlit>=1.36.0",
+]
+
+[project.optional-dependencies]
+# GPU mode (not used — no GPU available)
+gpu = [
+    "torch>=2.0.0",
+    "faster-whisper>=1.0.0",
+    "whisperx>=3.0.0",
+]
+# CPU mode — our target (faster-whisper uses CTranslate2, no torch needed)
+cpu = [
+    "faster-whisper>=1.0.0",
+]
+# RAG retrieval (Day 3-4)
+rag = [
+    "chromadb>=0.5.0",
+    "rank-bm25>=0.2.0",
+]
+# Embedding (Day 3-4)
+embed = [
+    "sentence-transformers>=3.0.0",
+    "dashscope>=1.20.0",
+]
+# Finance data (Day 5-6)
+finance = [
+    "akshare>=1.14.0",
+]
+# Full install (all stages)
+all = [
+    "podcast-agent[cpu,rag,embed,finance]",
+]
+
+[project.scripts]
+podcast-agent = "podcast_agent.main:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>港股通股票标的池监控系统 · 运行逻辑与技术栈</title>
+<style>
+  :root {
+    --c1: #0891b2; --c2: #0ea5e9;
+    --bg: #f6f8fb; --card: #ffffff; --border: #e6ebf2;
+    --text: #1e293b; --text-dim: #64748b; --text-faint: #94a3b8;
+    --radius: 16px;
+    --d-blue: #2563eb; --d-cyan: #0891b2; --d-purple: #8b5cf6; --d-green: #16a34a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Inter", "Segoe UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+    background: radial-gradient(1100px 520px at 85% -12%, #e0f2fe 0%, transparent 60%), var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  header {
+    position: relative; background: #fff; border-bottom: 1px solid var(--border);
+    padding: 26px 32px 24px; overflow: hidden;
+  }
+  header::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--c1), var(--c2)); }
+  .head-wrap { max-width: 1040px; margin: 0 auto; }
+  .back { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-dim); cursor: pointer; margin-bottom: 16px; text-decoration: none; }
+  .back:hover { color: var(--c1); }
+  header h1 { font-size: 24px; font-weight: 800; letter-spacing: .3px; }
+  header .en { font-size: 13px; color: var(--text-faint); margin-top: 4px; letter-spacing: .4px; }
+  .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { font-size: 12px; color: var(--c1); background: rgba(8,145,178,.08); padding: 5px 12px; border-radius: 999px; font-weight: 600; }
+  main { max-width: 1040px; margin: 0 auto; padding: 30px 32px 60px; }
+  section { margin-bottom: 40px; }
+  h2 { font-size: 18px; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
+  h2 .bar { width: 4px; height: 18px; border-radius: 2px; background: linear-gradient(180deg, var(--c1), var(--c2)); }
+  .sec-desc { font-size: 13px; color: var(--text-dim); margin-bottom: 18px; line-height: 1.7; }
+  .goal {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--c1) 6%, #fff), color-mix(in srgb, var(--c2) 6%, #fff));
+    border: 1px solid color-mix(in srgb, var(--c1) 18%, #fff);
+    border-radius: 16px;
+    padding: 22px 26px;
+    margin-bottom: 34px;
+  }
+  .goal-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .goal-icon { width: 32px; height: 32px; border-radius: 9px; background: linear-gradient(135deg, var(--c1), var(--c2)); display: grid; place-items: center; color: #fff; flex: 0 0 auto; }
+  .goal-label { font-size: 13px; font-weight: 700; color: var(--c1); letter-spacing: .5px; }
+  .goal-text { font-size: 17px; font-weight: 700; line-height: 1.7; color: var(--text); margin-bottom: 12px; }
+  .goal-why {
+    display: flex; gap: 12px; align-items: flex-start;
+    margin: 0 0 14px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px dashed color-mix(in srgb, var(--c1) 32%, #fff);
+    border-radius: 10px;
+  }
+  .goal-why::before {
+    content: ""; flex: 0 0 auto;
+    width: 4px; height: 4px; border-radius: 50%;
+    background: var(--c1);
+    margin-top: 9px;
+  }
+  .goal-why-text { font-size: 13px; color: var(--text-dim); line-height: 1.7; }
+  .goal-points { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+  .goal-points li { font-size: 13px; color: var(--text-dim); line-height: 1.7; padding-left: 18px; position: relative; }
+  .goal-points li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 6px; height: 6px; border-radius: 50%; background: var(--c1); }
+  .mermaid-box { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 24px; text-align: center; overflow-x: auto; }
+  .mermaid-box .mermaid { display: flex; justify-content: center; }
+
+  .stage { margin-bottom: 22px; }
+  .stage-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .stage-head .s-icon { width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; color: #fff; font-size: 13px; font-weight: 700; }
+  .stage-head .s-title { font-size: 15px; font-weight: 700; }
+  .stage-head .s-eng { font-size: 11.5px; color: var(--text-faint); font-family: "Consolas", monospace; }
+  .stage-body { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 6px 20px; }
+  .step { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .step:last-child { border-bottom: none; }
+  .step .n { width: 24px; height: 24px; flex: 0 0 auto; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 700; color: #fff; margin-top: 2px; }
+  .step .body { flex: 1; min-width: 0; }
+  .step .title { font-size: 14px; font-weight: 700; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .step .title .mod { font-size: 11px; color: #fff; padding: 2px 8px; border-radius: 6px; font-family: "Consolas", monospace; font-weight: 500; }
+  .step .desc { font-size: 12.5px; color: var(--text-dim); line-height: 1.7; margin-top: 4px; }
+  .step .params { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .step .params span { font-size: 11px; color: var(--text-dim); background: var(--bg); border: 1px solid var(--border); padding: 3px 8px; border-radius: 6px; font-family: "Consolas", monospace; }
+
+  .table-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th { background: #f8fafc; text-align: left; padding: 12px 16px; font-weight: 700; color: var(--text-dim); font-size: 12.5px; border-bottom: 1px solid var(--border); }
+  tbody td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody td code { font-family: "Consolas", monospace; font-size: 12.5px; background: var(--bg); padding: 2px 7px; border-radius: 6px; color: var(--c1); }
+
+  .layer { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; margin-bottom: 12px; }
+  .layer .l-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .layer .l-badge { font-size: 12px; font-weight: 700; color: #fff; padding: 4px 12px; border-radius: 999px; }
+  .layer .l-items { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .l-item { display: flex; gap: 10px; }
+  .l-item .dot { width: 8px; height: 8px; border-radius: 50%; flex: 0 0 auto; margin-top: 6px; }
+  .l-item .t { font-size: 13.5px; font-weight: 700; }
+  .l-item .d { font-size: 12.5px; color: var(--text-dim); line-height: 1.65; margin-top: 3px; }
+
+  .hl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .hl-item { background: linear-gradient(135deg, rgba(8,145,178,.05), rgba(14,165,233,.05)); border: 1px solid rgba(8,145,178,.15); border-radius: 14px; padding: 18px; }
+  .hl-item .hl-t { font-size: 14px; font-weight: 700; margin-bottom: 6px; color: var(--c1); }
+  .hl-item .hl-d { font-size: 12.5px; color: var(--text-dim); line-height: 1.7; }
+
+  @media (max-width: 720px) { .l-items, .hl { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="head-wrap">
+    <a class="back" href="index.html" onclick="window.close()">← 返回门户</a>
+    <h1>港股通股票标的池监控系统</h1>
+    <div class="en">Hong Kong Connect Stock Pool Monitor</div>
+    <div class="tags">
+      <span class="tag">双模式</span><span class="tag">规则扫描</span><span class="tag">量化预测</span><span class="tag">自然语言交互</span>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="goal">
+    <div class="goal-head">
+      <div class="goal-icon">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+      </div>
+      <span class="goal-label">系统目标 · Target</span>
+    </div>
+    <div class="goal-text">持续监控港股通标的池，并提前预测标的调入 / 调出，识别风险与机会。</div>
+    <div class="goal-why">
+      <span class="goal-why-text">港股通标的的纳入 / 剔除直接决定南向资金的配置范围，提前预判可把握标的调整带来的资金流入机会，并预警调出风险、避免持仓踩雷。</span>
+    </div>
+    <ul class="goal-points">
+      <li>模式 A 扫描：可每日触发运行，全市场监控，预警短期内有可能进入或调出港股通的股票</li>
+      <li>模式 B 预测：基于恒生综合指数的半年期成分股检讨预测，产出批量的港股通股票标的调入调出名单</li>
+    </ul>
+  </div>
+  <section>
+    <h2><span class="bar"></span>架构总览</h2>
+    <div class="sec-desc">自然语言入口统一分派，三条链路各司其职：模式 A 监控扫描、模式 B 预测、模式 B 回测。</div>
+    <div class="mermaid-box">
+      <div class="mermaid">
+flowchart TD
+    A(["自然语言输入<br/>命令 / 对话"]):::ai --> B(["意图识别与参数提取<br/>正则 + LLM"]):::ai
+    B --> C{"功能分流"}
+    C -->|模式A 监控扫描| D(["数据采集<br/>港股通标的池 · HSCI分类 · 行情市值"]):::quant
+    D --> D1[/"全市场数据<br/>行情 · 市值 · 分类"/]:::prod
+    D1 --> E(["规则引擎逐只评估<br/>排除 A+H股ST/退市 · 非港币 · 第二上市<br/>WVR 纳入 · 小型股 50亿/40亿门槛"]):::quant
+    E --> E1[/"风险评估<br/>逐股风险标签"/]:::prod
+    E1 --> F(["全市场扫描汇总"]):::quant
+    F --> F1[/"风险清单<br/>港股通风险股票"/]:::prod
+    C -->|模式B 预测| H(["选股范畴市值计算<br/>12 个月日均市值"]):::data
+    H --> H1[/"候选池<br/>范畴 + 日均市值"/]:::prod
+    H1 --> I(["换手率测试<br/>月换手率 ≥ 0.05%"]):::data
+    I --> I1[/"换手率名单<br/>通过 / 未通过"/]:::prod
+    I1 --> J(["考察期日均市值覆盖率<br/>95% 选股门槛 · 94%/96% 缓冲区"]):::data
+    J --> J1[/"HSCI 名单<br/>调入 · 调出"/]:::prod
+    J1 --> K(["港股通映射<br/>资格检查 + 调入调出判定"]):::data
+    K --> K1[/"港股通名单<br/>调入 · 调出 · 不合资格"/]:::prod
+    K1 --> L(["LLM 生成分析报告"]):::out
+    L --> L1[/"分析报告<br/>MD + HTML"/]:::prod
+    C -->|模式B 回测| M(["加载已有预测结果"]):::data
+    M --> M1[/"历史预测<br/>已保存的调入调出"/]:::prod
+    M1 --> N(["获取实际调整名单"]):::data
+    N --> N1[/"实际调整<br/>官方的调入调出"/]:::prod
+    N1 --> P(["双层对比评估<br/>HSCI 层 + 港股通层"]):::quant
+    P --> P1[/"评估结果<br/>精确率 · 召回率 · F1"/]:::prod
+    P1 --> Q(["偏差归因分析"]):::quant
+    Q --> Q1[/"偏差分析报告"/]:::prod
+    F1 --> R(["产出报告<br/>Markdown / JSON / HTML"]):::out
+    L1 --> R
+    Q1 --> R
+    R --> R1[/"报告文件<br/>最终交付物"/]:::prod
+    classDef ai fill:#eeedfe,stroke:#8b5cf6,color:#3c3489,stroke-width:1.5px;
+    classDef quant fill:#e0f2fe,stroke:#0891b2,color:#0c4a6e,stroke-width:1.5px;
+    classDef data fill:#e6f1fb,stroke:#2563eb,color:#0c447c,stroke-width:1.5px;
+    classDef out fill:#eaf3de,stroke:#639922,color:#27500a,stroke-width:1.5px;
+    classDef prod fill:#f8fafc,stroke:#94a3b8,color:#475569,stroke-width:1px,stroke-dasharray:5 3;
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar"></span>运行逻辑</h2>
+    <div class="sec-desc">一句话操作整个系统：自然语言识别意图后，分派到「模式 A 持续扫描」或「模式 B 预测 / 回测」两条链路。</div>
+
+    <div class="stage">
+      <div class="stage-head"><div class="s-icon" style="background:var(--d-purple)">1</div><span class="s-title">自然语言入口</span><span class="s-eng">ChatHandler</span></div>
+      <div class="stage-body">
+        <div class="step">
+          <div class="n" style="background:var(--d-purple)">1</div>
+          <div class="body">
+            <div class="title">混合意图识别 <span class="mod" style="background:var(--d-purple)">正则 + LLM</span></div>
+            <div class="desc">先正则快速匹配标准说法（「扫描」「预测 2026-03」「回测」），匹配不到再交大模型兜底理解非标准说法。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-purple)">2</div>
+          <div class="body">
+            <div class="title">自然语言交互</div>
+            <div class="desc">前端页面可以直接使用自然语言交互，识别不同意图：scan（扫描）、predict（预测）、backtest（回测），并支持多轮上下文继承（预测做完后继续提交「回测呢」可以沿用上一轮的结果）。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head"><div class="s-icon" style="background:var(--d-cyan)">2</div><span class="s-title">模式 A · 持续预警扫描</span><span class="s-eng">HkConnectMonitor</span></div>
+      <div class="stage-body">
+        <div class="step">
+          <div class="n" style="background:var(--d-cyan)">1</div>
+          <div class="body">
+            <div class="title">多数据源接入 <span class="mod" style="background:var(--d-cyan)">AkShareDataProvider</span></div>
+            <div class="desc">整合 akshare 接口数据、上交所港股通标的清单和调整记录、恒生综合指数官网成分股和调整数据。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-cyan)">2</div>
+          <div class="body">
+            <div class="title">规则引擎评估 <span class="mod" style="background:var(--d-cyan)">RuleEngine</span></div>
+            <div class="desc">逐股检查四类条件：① 排除条件（A+H 股 A 股 ST/退市、非港币报价）；② 第二上市不可纳入；③ WVR 首次纳入（上市满 6 个月 + 183 日日均市值 ≥200 亿 + 成交额 ≥60 亿）；④ 小型股市值门槛（前 12 月均市值，调入线 ≥50 亿 / 调出线 &lt;40 亿）。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-cyan)">3</div>
+          <div class="body">
+            <div class="title">全市场扫描 <span class="mod" style="background:var(--d-cyan)">HkConnectMonitor</span></div>
+            <div class="desc">遍历当前港股通标的池和港股市场，输出风险清单与 HTML 扫描报告。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head"><div class="s-icon" style="background:var(--d-blue)">3</div><span class="s-title">模式 B · 调入调出预测</span><span class="s-eng">OrchestratorB</span></div>
+      <div class="stage-body">
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">1</div>
+          <div class="body">
+            <div class="title">构建选股范畴 <span class="mod" style="background:var(--d-blue)">UniverseBuilder</span></div>
+            <div class="desc">计算截止日前 12 个月日均市值，过滤 HDR、外国公司第二上市、上市不足 90 天的股票。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">2</div>
+          <div class="body">
+            <div class="title">换手率测试 <span class="mod" style="background:var(--d-blue)">TurnoverTester</span></div>
+            <div class="desc">按编算总则做流动性测试，过滤低换手率候选（仅过滤调入，不影响覆盖率计算）。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">3</div>
+          <div class="body">
+            <div class="title">月末市值计算 <span class="mod" style="background:var(--d-blue)">MonthEndMarketCap</span></div>
+            <div class="desc">计算月末时点市值，用于港股通小型股市值门槛判断。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">4</div>
+          <div class="body">
+            <div class="title">HSCI恒生综合指数成分股调整预测 <span class="mod" style="background:var(--d-blue)">HSCICoverageModel</span></div>
+            <div class="desc">按市值覆盖率排序，预测 HSCI 成份股调入 / 调出，考虑覆盖率阈值与缓冲区状态。预测结果区分恒生综合大型、中型、小型股指数。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">5</div>
+          <div class="body">
+            <div class="title">港股通映射 <span class="mod" style="background:var(--d-blue)">StockConnectMapper</span></div>
+            <div class="desc">把 HSCI 变化映射到港股通，做资格检查（恒生综合小型股指数的成分股需进一步检查考察期内平均月末市值 / 不同投票权架构的公司股票首次纳入要额外满足其他条件 / A+H 等），输出调入调出与不合资格名单。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">6</div>
+          <div class="body">
+            <div class="title">LLM 报告 <span class="mod" style="background:var(--d-blue)">LLMReportGenerator</span></div>
+            <div class="desc">大模型基于预测结果生成 Markdown + HTML 分析报告。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head"><div class="s-icon" style="background:var(--d-green)">4</div><span class="s-title">回测验证</span><span class="s-eng">BacktestAgentB</span></div>
+      <div class="stage-body">
+        <div class="step">
+          <div class="n" style="background:var(--d-green)">1</div>
+          <div class="body">
+            <div class="title">双层对比</div>
+            <div class="desc">Layer 1 对比 HSCI 预测与实际调整，Layer 2 对比港股通映射与实际，输出精确率 / 召回率 / F1 与偏差分析。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar"></span>关键规则与参数</h2>
+    <div class="sec-desc">预测日期推导与核心阈值。</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>项</th><th>取值</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><code>调整月份 → 截止日</code></td><td>3 月 → 前一年 12-31</td><td>定期检讨，数据截止日</td></tr>
+          <tr><td><code>调整月份 → 截止日</code></td><td>9 月 → 当年 6-30</td><td>定期检讨，数据截止日</td></tr>
+          <tr><td><code>快速纳入</code></td><td>6 月 / 12 月</td><td>6 月 → 前一年 12-31，12 月 → 当年 6-30</td></tr>
+          <tr><td><code>最低市值阈值</code></td><td>5 亿港币</td><td>近似流动性测试，可调 --min-mc</td></tr>
+          <tr><td><code>上市时间过滤</code></td><td>≥ 90 天</td><td>选股范畴排除上市不足 90 天</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar"></span>技术栈</h2>
+    <div class="layer">
+      <div class="l-head"><span class="l-badge" style="background:var(--d-blue)">数据层</span></div>
+      <div class="l-items">
+        <div class="l-item"><span class="dot" style="background:var(--d-blue)"></span><div><div class="t">多数据源融合</div><div class="d">akshare + 上交所 + 恒生指数官网下载数据。</div></div></div>
+        <div class="l-item"><span class="dot" style="background:var(--d-blue)"></span><div><div class="t">历史快照重建</div><div class="d">从上交所和恒生综合官网下载的当前标的清单、成分股清单以及历史调整操作触发，反推某个历史时间点的标的和成分股清单。</div></div></div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="l-head"><span class="l-badge" style="background:var(--d-cyan)">量化层</span></div>
+      <div class="l-items">
+        <div class="l-item"><span class="dot" style="background:var(--d-cyan)"></span><div><div class="t">规则引擎</div><div class="d">HSCI / 港股通编制规则固化为可执行逻辑，逐股评估。</div></div></div>
+        <div class="l-item"><span class="dot" style="background:var(--d-cyan)"></span><div><div class="t">覆盖率 + 换手率模型</div><div class="d">市值覆盖率排序 + 流动性换手率测试，构成预测链路。</div></div></div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="l-head"><span class="l-badge" style="background:var(--d-purple)">AI 层</span></div>
+      <div class="l-items">
+        <div class="l-item"><span class="dot" style="background:var(--d-purple)"></span><div><div class="t">LLM 意图识别</div><div class="d">正则快速通道 + 大模型兜底的混合意图识别，支持多轮对话。</div></div></div>
+        <div class="l-item"><span class="dot" style="background:var(--d-purple)"></span><div><div class="t">LLM 报告生成</div><div class="d">基于预测 / 回测结果生成结构化分析报告。</div></div></div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="l-head"><span class="l-badge" style="background:var(--d-green)">编排层</span></div>
+      <div class="l-items">
+        <div class="l-item"><span class="dot" style="background:var(--d-green)"></span><div><div class="t">三路统一分派</div><div class="d">自然语言入口识别意图，统一分派到模式 A 扫描、模式 B 预测、模式 B 回测三条链路。</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar"></span>技术亮点</h2>
+    <div class="hl">
+      <div class="hl-item"><div class="hl-t">双模式架构</div><div class="hl-d">「持续扫描预警」与「预测回测」独立又统一，覆盖监控与研判两类场景。</div></div>
+      <div class="hl-item"><div class="hl-t">混合意图识别</div><div class="hl-d">标准说法正则秒回，非标准说法大模型兜底，兼顾速度与理解力。</div></div>
+      <div class="hl-item"><div class="hl-t">多数据源融合</div><div class="hl-d">整合 akshare、上交所港股通标的数据、恒生综合指数官方 PDF 转换数据。</div></div>
+    </div>
+  </section>
+</main>
+<script src="assets/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "base",
+    themeVariables: {
+      fontSize: "15px",
+      fontFamily: '"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif'
+    },
+    flowchart: { htmlLabels: true, curve: "basis", nodeSpacing: 46, rankSpacing: 56 }
+  });
+</script>
+</body>
+</html>

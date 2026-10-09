@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>A股指数成份股调整预测 · 运行逻辑与技术栈</title>
+<style>
+  :root {
+    --c1: #2563eb; --c2: #6366f1;
+    --bg: #f6f8fb; --card: #ffffff; --border: #e6ebf2;
+    --text: #1e293b; --text-dim: #64748b; --text-faint: #94a3b8;
+    --radius: 16px;
+    --d-blue: #2563eb; --d-cyan: #0891b2; --d-purple: #8b5cf6; --d-green: #16a34a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Inter", "Segoe UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+    background: radial-gradient(1100px 520px at 85% -12%, #e6ecfb 0%, transparent 60%), var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  header {
+    position: relative; background: #fff; border-bottom: 1px solid var(--border);
+    padding: 26px 32px 24px; overflow: hidden;
+  }
+  header::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--c1), var(--c2)); }
+  .head-wrap { max-width: 1040px; margin: 0 auto; }
+  .back { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-dim); cursor: pointer; margin-bottom: 16px; text-decoration: none; }
+  .back:hover { color: var(--c1); }
+  header h1 { font-size: 24px; font-weight: 800; letter-spacing: .3px; }
+  header .en { font-size: 13px; color: var(--text-faint); margin-top: 4px; letter-spacing: .4px; }
+  .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { font-size: 12px; color: var(--c1); background: rgba(37,99,235,.08); padding: 5px 12px; border-radius: 999px; font-weight: 600; }
+  main { max-width: 1040px; margin: 0 auto; padding: 30px 32px 60px; }
+  section { margin-bottom: 40px; }
+  h2 { font-size: 18px; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
+  h2 .bar { width: 4px; height: 18px; border-radius: 2px; background: linear-gradient(180deg, var(--c1), var(--c2)); }
+  .sec-desc { font-size: 13px; color: var(--text-dim); margin-bottom: 18px; line-height: 1.7; }
+  .goal {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--c1) 6%, #fff), color-mix(in srgb, var(--c2) 6%, #fff));
+    border: 1px solid color-mix(in srgb, var(--c1) 18%, #fff);
+    border-radius: 16px;
+    padding: 22px 26px;
+    margin-bottom: 34px;
+  }
+  .goal-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .goal-icon { width: 32px; height: 32px; border-radius: 9px; background: linear-gradient(135deg, var(--c1), var(--c2)); display: grid; place-items: center; color: #fff; flex: 0 0 auto; }
+  .goal-label { font-size: 13px; font-weight: 700; color: var(--c1); letter-spacing: .5px; }
+  .goal-text { font-size: 17px; font-weight: 700; line-height: 1.7; color: var(--text); margin-bottom: 12px; }
+  .goal-why {
+    display: flex; gap: 12px; align-items: flex-start;
+    margin: 0 0 14px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px dashed color-mix(in srgb, var(--c1) 32%, #fff);
+    border-radius: 10px;
+  }
+  .goal-why::before {
+    content: ""; flex: 0 0 auto;
+    width: 4px; height: 4px; border-radius: 50%;
+    background: var(--c1);
+    margin-top: 9px;
+  }
+  .goal-why-text { font-size: 13px; color: var(--text-dim); line-height: 1.7; }
+  .goal-points { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+  .goal-points li { font-size: 13px; color: var(--text-dim); line-height: 1.7; padding-left: 18px; position: relative; }
+  .goal-points li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 6px; height: 6px; border-radius: 50%; background: var(--c1); }
+  .mermaid-box { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 24px; text-align: center; overflow-x: auto; }
+  .mermaid-box .mermaid { display: flex; justify-content: center; }
+
+  /* ===== 分阶段流程 ===== */
+  .stage { margin-bottom: 22px; }
+  .stage-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .stage-head .s-icon { width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; color: #fff; font-size: 13px; font-weight: 700; }
+  .stage-head .s-title { font-size: 15px; font-weight: 700; }
+  .stage-head .s-eng { font-size: 11.5px; color: var(--text-faint); font-family: "Consolas", monospace; }
+  .stage-body { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 6px 20px; }
+  .step { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .step:last-child { border-bottom: none; }
+  .step .n { width: 24px; height: 24px; flex: 0 0 auto; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 700; color: #fff; margin-top: 2px; }
+  .step .body { flex: 1; min-width: 0; }
+  .step .title { font-size: 14px; font-weight: 700; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .step .title .mod { font-size: 11px; color: #fff; padding: 2px 8px; border-radius: 6px; font-family: "Consolas", monospace; font-weight: 500; }
+  .step .desc { font-size: 12.5px; color: var(--text-dim); line-height: 1.7; margin-top: 4px; }
+  .step .params { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .step .params span { font-size: 11px; color: var(--text-dim); background: var(--bg); border: 1px solid var(--border); padding: 3px 8px; border-radius: 6px; font-family: "Consolas", monospace; }
+
+  /* ===== 参数表 ===== */
+  .table-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th { background: #f8fafc; text-align: left; padding: 12px 16px; font-weight: 700; color: var(--text-dim); font-size: 12.5px; border-bottom: 1px solid var(--border); }
+  tbody td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody td code { font-family: "Consolas", monospace; font-size: 12.5px; background: var(--bg); padding: 2px 7px; border-radius: 6px; color: var(--c1); }
+
+  /* ===== 技术栈分层 ===== */
+  .layer { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; margin-bottom: 12px; }
+  .layer .l-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .layer .l-badge { font-size: 12px; font-weight: 700; color: #fff; padding: 4px 12px; border-radius: 999px; }
+  .layer .l-items { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .l-item { display: flex; gap: 10px; }
+  .l-item .dot { width: 8px; height: 8px; border-radius: 50%; flex: 0 0 auto; margin-top: 6px; }
+  .l-item .t { font-size: 13.5px; font-weight: 700; }
+  .l-item .d { font-size: 12.5px; color: var(--text-dim); line-height: 1.65; margin-top: 3px; }
+
+  /* ===== 亮点 ===== */
+  .hl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .hl-item { background: linear-gradient(135deg, rgba(37,99,235,.05), rgba(99,102,241,.05)); border: 1px solid rgba(37,99,235,.15); border-radius: 14px; padding: 18px; }
+  .hl-item .hl-t { font-size: 14px; font-weight: 700; margin-bottom: 6px; color: var(--c1); }
+  .hl-item .hl-d { font-size: 12.5px; color: var(--text-dim); line-height: 1.7; }
+
+  @media (max-width: 720px) { .l-items, .hl { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="head-wrap">
+    <a class="back" href="index.html" onclick="window.close()">← 返回门户</a>
+    <h1>A股指数成份股调整预测系统</h1>
+    <div class="en">CSI 300 Constituent Adjustment Prediction</div>
+    <div class="tags">
+      <span class="tag">量化规则</span><span class="tag">大模型研判</span><span class="tag">多 Agent</span><span class="tag">可回测</span>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="goal">
+    <div class="goal-head">
+      <div class="goal-icon">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+      </div>
+      <span class="goal-label">系统目标 · Target</span>
+    </div>
+    <div class="goal-text">提前预测沪深300指数的半年度成份股调整，获取调入 / 调出 / 备选名单。</div>
+    <div class="goal-why">
+      <span class="goal-why-text">成份股调整会引发指数基金、ETF 等被动资金的集中调仓，提前预判调入调出，可帮助投研与交易部门把握调仓资金流向——捕捉调入个股的增量资金机会、规避调出个股的抛压风险。</span>
+    </div>
+    <ul class="goal-points">
+      <li>量化排名：用编制规则（成交额排名 + 市值排名 + 缓冲区规则）得到可能调入调出的股票</li>
+      <li>大模型研判：基于候选排名 + 候选股财务数据（净利润、ROE、负债率、审计意见）综合研判调入调出</li>
+      <li>回测验证：对比实际调整，量化预测准确率</li>
+    </ul>
+  </div>
+  <section>
+    <h2><span class="bar"></span>架构总览</h2>
+    <div class="sec-desc">端到端流程一图速览：从数据采集到量化选样、LLM 增强与回测。</div>
+    <div class="mermaid-box">
+      <div class="mermaid">
+flowchart TD
+    A(["自然语言输入<br/>预测 / 回测 / 规则查询"]):::ai --> B(["意图识别与参数提取<br/>正则映射 + 目标日期"]):::ai
+    B --> C{"功能分流<br/>预测 or 回测"}
+    C -->|预测调整| D(["数据采集<br/>行情 · 成分股 · 财务"]):::data
+    D --> D1[/"市场快照<br/>全市场数据 + 成分股"/]:::prod
+    D1 --> E(["样本空间筛选<br/>排除 ST · 北交所 · 上市时间不足"]):::quant
+    E --> E1[/"合格股票池<br/>通过准入的候选股"/]:::prod
+    E1 --> F(["成交额排名<br/>剔除后 50% + 老样本缓冲"]):::quant
+    F --> F1[/"剔除后名单<br/>成交额前 50%"/]:::prod
+    F1 --> G(["市值排名<br/>按日均总市值降序"]):::quant
+    G --> G1[/"市值排名榜<br/>候选股市值排名"/]:::prod
+    G1 --> H(["缓冲区选样<br/>优先级 240/300/360 取前 300"]):::quant
+    H --> H1[/"调整股票清单<br/>预测调入 · 调出 · 备选"/]:::prod
+    H1 --> I(["LLM 研判<br/>排名 + 财务数据 + 规则"]):::ai
+    I --> I1[/"研判结果<br/>调入 · 调出 · 备选 + 置信度"/]:::prod
+    I1 --> J(["生成预测报告<br/>HTML 报告"]):::out
+    J --> J1[/"HTML 报告<br/>调入调出明细 + 可视化"/]:::prod
+    C -->|回测验证| K(["加载已有预测结果<br/>读取历史 prediction JSON"]):::data
+    K --> K1[/"历史预测<br/>已保存的调入调出"/]:::prod
+    K1 --> L(["获取实际调整名单<br/>从数据源拉实际记录"]):::data
+    L --> L1[/"实际调整<br/>官方的调入调出"/]:::prod
+    L1 --> M(["对比评估与偏差归因<br/>精确率 · 召回率 · F1"]):::quant
+    M --> M1[/"回测指标<br/>精确率 · 召回率 · F1"/]:::prod
+    M1 --> N(["生成回测报告<br/>回测报告 HTML"]):::out
+    N --> N1[/"回测报告<br/>评估结果 + 偏差分析"/]:::prod
+    J1 --> O(["产出报告<br/>Markdown / JSON / HTML"]):::out
+    N1 --> O
+    O --> O1[/"报告文件<br/>最终交付物"/]:::prod
+    classDef data fill:#e6f1fb,stroke:#2563eb,color:#0c447c,stroke-width:1.5px;
+    classDef quant fill:#e0f2fe,stroke:#0891b2,color:#0c4a6e,stroke-width:1.5px;
+    classDef ai fill:#eeedfe,stroke:#8b5cf6,color:#3c3489,stroke-width:1.5px;
+    classDef out fill:#eaf3de,stroke:#639922,color:#27500a,stroke-width:1.5px;
+    classDef prod fill:#f8fafc,stroke:#94a3b8,color:#475569,stroke-width:1px,stroke-dasharray:5 3;
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar"></span>运行逻辑</h2>
+    <div class="sec-desc">半年度（6月 / 12月）预测沪深300成份股调入调出，自然语言入口识别意图后分派到「预测调整」或「回测验证」两条独立链路，核心链路：数据采集 → 量化筛选与排名 → LLM 研判 → 预测报告。</div>
+
+    <div class="stage">
+      <div class="stage-head"><div class="s-icon" style="background:var(--d-blue)">1</div><span class="s-title">数据采集</span><span class="s-eng">DataAgent</span></div>
+      <div class="stage-body">
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">1</div>
+          <div class="body">
+            <div class="title">时间点数据隔离 <span class="mod" style="background:var(--d-blue)">原则</span></div>
+            <div class="desc">严格「不看未来数据」——所有采集数据均不超过数据截止日 cutoff_date（如 6 月调整对应 4 月 30 日）。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">2</div>
+          <div class="body">
+            <div class="title">量化数据并发采集</div>
+            <div class="desc">三路并发：指数成分股快照、全市场行情（市值 / 成交额 / 上市信息），供排名与阈值模型使用。</div>
+            <div class="params"><span>akshare / tushare 可切换</span></div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">3</div>
+          <div class="body">
+            <div class="title">定性数据并发采集</div>
+            <div class="desc">财务数据（净利润、ROE、负债率、审计意见）、停牌等事件、价格变动、行业分布。其中候选股财务数据后续会组装进大模型的上下文。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">4</div>
+          <div class="body">
+            <div class="title">关注池裁剪</div>
+            <div class="desc">只对「调整前成分股 + 市值前 600」做定性数据采集，避免全市场扫描过慢。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head"><div class="s-icon" style="background:var(--d-cyan)">2</div><span class="s-title">量化筛选与排名</span><span class="s-eng">RuleAgent · RankModel</span></div>
+      <div class="stage-body">
+        <div class="step">
+          <div class="n" style="background:var(--d-cyan)">1</div>
+          <div class="body">
+            <div class="title">准入筛选</div>
+            <div class="desc">排除 ST/*ST、北交所股票、上市时间不足（科创 / 创业板需满 12 个月）、财务亏损（仅非成分股，科创板除外）。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-cyan)">2</div>
+          <div class="body">
+            <div class="title">成交额排名 · 剔除后 50%</div>
+            <div class="desc">先按日均成交金额降序，剔除后 50%；老样本额外享有成交额缓冲区（排名前 60% 保留）。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-cyan)">3</div>
+          <div class="body">
+            <div class="title">市值排名</div>
+            <div class="desc">再按日均总市值降序排名。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-cyan)">4</div>
+          <div class="body">
+            <div class="title">缓冲区选样</div>
+            <div class="desc">按「缓冲区」规则给每只股票打选样优先级，取前 300 只，确定调入 / 调出 / 备选名单。</div>
+            <div class="params"><span>样本 300</span><span>新样本优先线 240</span><span>老样本保留线 360</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head"><div class="s-icon" style="background:var(--d-purple)">3</div><span class="s-title">LLM 研判</span><span class="s-eng">PredictAgent</span></div>
+      <div class="stage-body">
+        <div class="step">
+          <div class="n" style="background:var(--d-purple)">1</div>
+          <div class="body">
+            <div class="title">组装 LLM 上下文</div>
+            <div class="desc">把当前成分股列表、候选排名（市值 + 流动性 + 缓冲区标记）、准入检查结果、候选股财务数据、量化结果、编制规则组装成 prompt。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-purple)">2</div>
+          <div class="body">
+            <div class="title">大模型研判</div>
+            <div class="desc">大模型基于排名识别调入调出，并结合候选股财务数据（净利润、ROE、资产负债率、是否亏损、审计意见）做定性判断，输出调入 / 调出 / 备选名单及置信度、理由。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-purple)">3</div>
+          <div class="body">
+            <div class="title">结果校正回填</div>
+            <div class="desc">用排名数据回填 LLM 输出的股票名称与代码，修正「待核实」等错误名称、补全交易所后缀，保证后续回测能正确匹配。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head"><div class="s-icon" style="background:var(--d-green)">4</div><span class="s-title">预测报告</span><span class="s-eng">report_agent · llm_report_agent</span></div>
+      <div class="stage-body">
+        <div class="step">
+          <div class="n" style="background:var(--d-green)">1</div>
+          <div class="body">
+            <div class="title">预测报告 + LLM 分析报告</div>
+            <div class="desc">生成 HTML 预测报告（调入 / 调出明细 + 可视化），并额外由大模型生成分析报告。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head"><div class="s-icon" style="background:var(--d-blue)">5</div><span class="s-title">回测验证（独立分支）</span><span class="s-eng">backtest_agent</span></div>
+      <div class="stage-body">
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">1</div>
+          <div class="body">
+            <div class="title">加载历史预测</div>
+            <div class="desc">从磁盘读取已保存的 prediction JSON。识别为回测指令后立即执行，不重跑量化预测链路。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">2</div>
+          <div class="body">
+            <div class="title">获取实际调整名单</div>
+            <div class="desc">从数据源拉取官方公布的实际调入调出记录。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">3</div>
+          <div class="body">
+            <div class="title">对比评估与偏差归因</div>
+            <div class="desc">计算调入/调出的精确率、召回率与 F1，并分析预测偏差原因。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n" style="background:var(--d-blue)">4</div>
+          <div class="body">
+            <div class="title">生成回测报告</div>
+            <div class="desc">输出回测评估报告（HTML），含评估结果与偏差分析。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar"></span>缓冲区规则（关键参数）</h2>
+    <div class="sec-desc">量化选样的核心，保证指数样本稳定、降低换手。</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>参数</th><th>取值</th><th>含义</th></tr></thead>
+        <tbody>
+          <tr><td><code>sample_count</code></td><td>300</td><td>指数固定样本数</td></tr>
+          <tr><td><code>buffer_in</code></td><td>240</td><td>新样本市值排名 ≤ 240 优先进入</td></tr>
+          <tr><td><code>buffer_out</code></td><td>360</td><td>老样本市值排名 ≤ 360 优先保留</td></tr>
+          <tr><td><code>老样本成交额线</code></td><td>前 60%</td><td>被成交额后 50% 剔除的老样本，成交额排前 60% 可保留</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar"></span>技术栈</h2>
+    <div class="layer">
+      <div class="l-head"><span class="l-badge" style="background:var(--d-blue)">数据层</span></div>
+      <div class="l-items">
+        <div class="l-item"><span class="dot" style="background:var(--d-blue)"></span><div><div class="t">多数据源切换</div><div class="d">akshare（免费）/ tushare（付费需 key），配置驱动，统一采集接口。</div></div></div>
+        <div class="l-item"><span class="dot" style="background:var(--d-blue)"></span><div><div class="t">并发采集</div><div class="d">线程池并发拉取量化与定性数据，提升采集速度。</div></div></div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="l-head"><span class="l-badge" style="background:var(--d-cyan)">量化层</span></div>
+      <div class="l-items">
+        <div class="l-item"><span class="dot" style="background:var(--d-cyan)"></span><div><div class="t">缓冲区优先级模型</div><div class="d">RankModel 多层优先级算法，把编制规则固化为可计算逻辑。</div></div></div>
+        <div class="l-item"><span class="dot" style="background:var(--d-cyan)"></span><div><div class="t">规则可配置</div><div class="d">编制规则写在 YAML frontmatter + Markdown，RuleParser 解析，改规则不改代码。</div></div></div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="l-head"><span class="l-badge" style="background:var(--d-purple)">AI 层</span></div>
+      <div class="l-items">
+        <div class="l-item"><span class="dot" style="background:var(--d-purple)"></span><div><div class="t">LLM 研判</div><div class="d">基于候选排名 + 候选股财务数据（净利润、ROE、负债率、审计意见）让大模型综合研判调入调出。</div></div></div>
+        <div class="l-item"><span class="dot" style="background:var(--d-purple)"></span><div><div class="t">LLM 分析报告</div><div class="d">大模型生成可读的分析报告，输出调整逻辑解读。</div></div></div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="l-head"><span class="l-badge" style="background:var(--d-green)">编排层</span></div>
+      <div class="l-items">
+        <div class="l-item"><span class="dot" style="background:var(--d-green)"></span><div><div class="t">配置驱动多 Agent</div><div class="d">skill.md 定义工作流，AgentRegistry 注册，Orchestrator 通用执行引擎按步骤调度。</div></div></div>
+        <div class="l-item"><span class="dot" style="background:var(--d-green)"></span><div><div class="t">自然语言意图</div><div class="d">正则映射自然语言到预测 / 回测工作流。</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="bar"></span>技术亮点</h2>
+    <div class="hl">
+      <div class="hl-item"><div class="hl-t">量化 + LLM 双引擎</div><div class="hl-d">量化定「谁进谁出」，大模型定「该不该」，覆盖纯量化难判断的灰色地带。</div></div>
+      <div class="hl-item"><div class="hl-t">严格防未来函数</div><div class="hl-d">所有数据以 cutoff_date 隔离，回测结果可信，不偷看未来。</div></div>
+      <div class="hl-item"><div class="hl-t">规则即配置</div><div class="hl-d">编制规则独立成文件，扩展新指数只需新增规则与 Agent 注册。</div></div>
+    </div>
+  </section>
+</main>
+<script src="assets/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "base",
+    themeVariables: {
+      fontSize: "15px",
+      fontFamily: '"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif'
+    },
+    flowchart: { htmlLabels: true, curve: "basis", nodeSpacing: 46, rankSpacing: 56 }
+  });
+</script>
+</body>
+</html>

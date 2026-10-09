@@ -1,0 +1,18 @@
+# 环境配置文件 (含API密钥，不要提交)
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 数据缓存与存储
+data/storage/database/*.db
+data/storage/cache/
+data/storage/reports/*.md
+
+# IDE
+.vscode/
+.idea/

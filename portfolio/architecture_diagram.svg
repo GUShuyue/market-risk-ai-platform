@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" font-family="'Inter','Segoe UI','Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .t { fill:#1f2a3a; font-weight:700; }
+      .s { fill:#5a6573; font-size:12px; }
+      .box { fill:#f4f7fb; stroke:#c9d4e3; stroke-width:1.2; }
+      .boxA { fill:#eef3fb; stroke:#9fb8e0; }
+      .boxB { fill:#eef6f4; stroke:#9fd0c4; }
+      .boxC { fill:#f5f0fb; stroke:#c3aee0; }
+      .ext { fill:#fff5f3; stroke:#e0b3a8; }
+      .portal { fill:#1f5fbf; }
+      .lab { fill:#fff; font-weight:700; font-size:15px; }
+      .arrow { stroke:#8a94a6; stroke-width:1.6; fill:none; }
+      .hdr { font-size:14px; font-weight:700; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1000" height="760" fill="#ffffff"/>
+
+  <!-- title -->
+  <text x="30" y="34" class="t" font-size="20">AI 市场风险管理平台 · 整体架构</text>
+  <text x="30" y="54" class="s">统一门户聚合三个异构 AI 系统，共享"编排 + LLM 增强 + 回测验证"工程范式</text>
+
+  <!-- PORTAL -->
+  <rect x="30" y="70" width="940" height="56" rx="10" class="portal"/>
+  <text x="500" y="96" text-anchor="middle" class="lab">统一门户 Portal · 工作台外壳（左栏导航 + 状态探活 + 设计系统）</text>
+  <text x="500" y="116" text-anchor="middle" class="s" fill="#dbe6f7">iframe 内嵌 · 地址可配置 · 零逻辑侵入</text>
+
+  <!-- arrows portal -> columns -->
+  <path class="arrow" d="M190 126 L190 150"/>
+  <path class="arrow" d="M500 126 L500 150"/>
+  <path class="arrow" d="M810 126 L810 150"/>
+
+  <!-- ============ COLUMN A: CSI300 ============ -->
+  <text x="170" y="146" text-anchor="middle" class="hdr" fill="#1f5fbf">A股指数成份股调整预测</text>
+  <rect x="30" y="152" width="280" height="58" rx="8" class="boxA"/>
+  <text x="170" y="176" text-anchor="middle" class="t" font-size="13">交互层</text>
+  <text x="170" y="195" text-anchor="middle" class="s">CLI / FastAPI / 原生 HTML 单页</text>
+
+  <rect x="30" y="220" width="280" height="70" rx="8" class="boxA"/>
+  <text x="170" y="244" text-anchor="middle" class="t" font-size="13">配置驱动编排</text>
+  <text x="170" y="263" text-anchor="middle" class="s">skill.md 工作流 + orchestrator</text>
+  <text x="170" y="281" text-anchor="middle" class="s">agent_registry（6 Agents）</text>
+
+  <rect x="30" y="300" width="280" height="64" rx="8" class="boxA"/>
+  <text x="170" y="324" text-anchor="middle" class="t" font-size="13">双预测引擎</text>
+  <text x="170" y="343" text-anchor="middle" class="s">纯量化规则（可解释）</text>
+  <text x="170" y="360" text-anchor="middle" class="s">+ LLM 增强（use_llm 切换）</text>
+
+  <rect x="30" y="374" width="280" height="56" rx="8" class="boxA"/>
+  <text x="170" y="398" text-anchor="middle" class="t" font-size="13">数据 &amp; 报告</text>
+  <text x="170" y="416" text-anchor="middle" class="s">Tushare / AKShare / SQLite</text>
+
+  <!-- ============ COLUMN B: 港股通 ============ -->
+  <text x="500" y="146" text-anchor="middle" class="hdr" fill="#1f5fbf">港股通标的池监控</text>
+  <rect x="360" y="152" width="280" height="58" rx="8" class="boxB"/>
+  <text x="500" y="176" text-anchor="middle" class="t" font-size="13">交互层</text>
+  <text x="500" y="195" text-anchor="middle" class="s">FastAPI（SSE）/ 原生 HTML 单页</text>
+
+  <rect x="360" y="220" width="280" height="70" rx="8" class="boxB"/>
+  <text x="500" y="244" text-anchor="middle" class="t" font-size="13">双模式</text>
+  <text x="500" y="263" text-anchor="middle" class="s">Mode A 持续扫描</text>
+  <text x="500" y="281" text-anchor="middle" class="s">Mode B 预测 / 回测</text>
+
+  <rect x="360" y="300" width="280" height="64" rx="8" class="boxB"/>
+  <text x="500" y="324" text-anchor="middle" class="t" font-size="13">两层模型</text>
+  <text x="500" y="343" text-anchor="middle" class="s">Layer1 HSCI 覆盖率</text>
+  <text x="500" y="360" text-anchor="middle" class="s">Layer2 港股通映射</text>
+
+  <rect x="360" y="374" width="280" height="56" rx="8" class="boxB"/>
+  <text x="500" y="398" text-anchor="middle" class="t" font-size="13">数据 &amp; 缓存</text>
+  <text x="500" y="416" text-anchor="middle" class="s">akshare / 上交所 / 恒生 · JSON 续采</text>
+
+  <!-- ============ COLUMN C: 播客 ============ -->
+  <text x="830" y="146" text-anchor="middle" class="hdr" fill="#1f5fbf">播客舆情分析</text>
+  <rect x="690" y="152" width="280" height="58" rx="8" class="boxC"/>
+  <text x="830" y="176" text-anchor="middle" class="t" font-size="13">交互层</text>
+  <text x="830" y="195" text-anchor="middle" class="s">Streamlit（自然语言 / 采集 / 上传）</text>
+
+  <rect x="690" y="220" width="280" height="70" rx="8" class="boxC"/>
+  <text x="830" y="244" text-anchor="middle" class="t" font-size="13">LangGraph 编排</text>
+  <text x="830" y="263" text-anchor="middle" class="s">StateGraph 7 Agents</text>
+  <text x="830" y="281" text-anchor="middle" class="s">条件路由 · Map-Reduce</text>
+
+  <rect x="690" y="300" width="280" height="64" rx="8" class="boxC"/>
+  <text x="830" y="324" text-anchor="middle" class="t" font-size="13">AI 流水线</text>
+  <text x="830" y="343" text-anchor="middle" class="s">ASR → 情感 → 分析</text>
+  <text x="830" y="360" text-anchor="middle" class="s">→ RAG → 跨市场传导</text>
+
+  <rect x="690" y="374" width="280" height="56" rx="8" class="boxC"/>
+  <text x="830" y="398" text-anchor="middle" class="t" font-size="13">数据</text>
+  <text x="830" y="416" text-anchor="middle" class="s">SQLite 元数据 + ChromaDB</text>
+
+  <!-- arrows columns -> external -->
+  <path class="arrow" d="M170 430 L170 580"/>
+  <path class="arrow" d="M500 430 L500 580"/>
+  <path class="arrow" d="M830 430 L830 580"/>
+  <path class="arrow" d="M830 540 L700 540 L700 600"/>
+
+  <!-- EXTERNAL SERVICES -->
+  <rect x="30" y="580" width="940" height="120" rx="10" class="ext"/>
+  <text x="50" y="606" class="t" font-size="14">共享外部服务 / 数据源</text>
+
+  <rect x="50" y="620" width="280" height="62" rx="8" class="box"/>
+  <text x="190" y="646" text-anchor="middle" class="t" font-size="13">阿里云百炼 qwen（LLM）</text>
+  <text x="190" y="666" text-anchor="middle" class="s">三系统共用 · OpenAI 兼容接口</text>
+
+  <rect x="360" y="620" width="280" height="62" rx="8" class="box"/>
+  <text x="500" y="646" text-anchor="middle" class="t" font-size="13">DashScope ASR</text>
+  <text x="500" y="666" text-anchor="middle" class="s">qwen-audio-3.0-asr-flash（播客）</text>
+
+  <rect x="670" y="620" width="280" height="62" rx="8" class="box"/>
+  <text x="810" y="646" text-anchor="middle" class="t" font-size="13">东财概念板块</text>
+  <text x="810" y="666" text-anchor="middle" class="s">504 个板块（跨市场传导映射）</text>
+
+  <!-- note -->
+  <text x="30" y="740" class="s">注：CSI300 / 港股通前端为原生 HTML，播客为 Streamlit；所有 LLM 调用经阿里云百炼，ASR 经 DashScope。</text>
+</svg>

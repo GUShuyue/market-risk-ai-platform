@@ -1,0 +1,42 @@
+# 主配置文件
+
+# 项目配置
+project:
+  name: index_adjustment_predictor
+  version: 1.1.0
+  language: zh-CN
+
+# 数据截止日规则（通用，各指数一致）
+adjustment_schedule:
+  june:
+    cutoff_date: "04-30"
+    announcement: "5月下旬审核，6月初公告"
+    effective: "6月第二个星期五后下一交易日"
+  december:
+    cutoff_date: "10-31"
+    announcement: "11月下旬审核，12月初公告"
+    effective: "12月第二个星期五后下一交易日"
+
+# 支持的指数
+# 注意：量化参数（sample_count, buffer_zone等）不在硬编码于此，
+# 而是从各指数的rule_file的YAML frontmatter中读取
+indices:
+  csi300:
+    name: "沪深300"
+    code: "000300.SH"
+    rule_file: "rules/csi300.md"
+    publisher: "中证指数有限公司"
+
+# 预测顺序
+prediction_order:
+  - csi300
+
+# 报告输出
+report:
+  output_dir: "reports"
+  format: "markdown"
+
+# 日志
+logging:
+  level: "INFO"
+  file: "logs/app.log"
